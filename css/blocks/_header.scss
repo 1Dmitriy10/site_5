@@ -1,0 +1,137 @@
+.header {
+    background: #29384F;
+}
+.header_container {
+    height: 121px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+}
+.header_logo {
+    background:url("../../img/header/header_logo.svg");
+    width: 293px;
+    height: 72px;
+    align-self: center;
+    @media (max-width: 1020px) {
+        display: none;
+     }
+}
+.mob-logo{
+    display: flex;
+}
+
+.nav_box {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    align-items: center;
+    @media (max-width: 1440px) {
+        display: none;
+    }
+}
+.nav_box-mob{
+    padding: 30px 0 30px 0;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #29384F;
+    align-items: center;
+    gap: 30px;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+    &.active{
+        transition: 0.5s;
+        display: flex;
+        opacity: 1;
+    }
+}
+.burger-menu{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: transparent;
+    @media (max-width: 1440px) {
+        display: flex;
+    }
+}
+.burger-menu-exit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: transparent;
+    display: flex;
+    position: absolute;
+    right: 2%;
+    top: 5%;
+}
+.svg-inline--fa{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #fff;
+    &:hover{
+        color: #B20002;
+      }
+}
+.nav_link {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFF;
+    &:hover{
+      color: #B20002;
+    }
+}
+.header_contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    @media (max-width: 1020px) {
+       display: none;
+    }
+}
+.mob-contact{
+    display: flex; 
+}
+.header_contact_phone {
+    font-size: 32px;
+    font-weight: 800;
+    color: #FFF;
+}
+.header_contact_email {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+.btn {
+    background: linear-gradient(180deg, #FE0307 0%, #B20002 100%);
+    height: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 305px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #FFF;
+    align-self: center;
+    border: transparent;
+    &:hover{
+        color: #B20002;
+        background: #fff;
+        border: 1px solid black;
+    }
+}
+.header_btn {
+    @media (max-width: 798px) {
+        width: 250px;
+    }
+    @media (max-width: 445px) {
+        width: 150px;
+        font-size: 15px;
+        height: 50px;
+    }
+}
